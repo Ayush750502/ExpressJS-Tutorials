@@ -14,8 +14,8 @@ app.get("/" , logger, logger, logger , (req , res  /* , next*/) => {
     console.log("App has ended!");
 });
 
-const loginRouter = require('./routes/signUp');
-app.use('/login' , loginRouter)
+// const loginRouter = require('./routes/signUp');
+// app.use('/login' , loginRouter)
 const userRouter = require('./routes/users');// adding user library
 app.use('/users' , userRouter);// adding route to the server
 const publicRouter = require('./routes/public');// adding user library
@@ -27,4 +27,4 @@ function logger(req , res , next){
 }
 
 app.listen(3020);
-console.log("Sever is running at 'http://localhost:3020'");
+console.log("Sever is running at 'http://localhost:3000'");
