@@ -26,5 +26,5 @@ function logger(req , res , next){
     next();
 }
 
-app.listen(3020);
+app.listen(3000);
 console.log("Sever is running at 'http://localhost:3000'");
