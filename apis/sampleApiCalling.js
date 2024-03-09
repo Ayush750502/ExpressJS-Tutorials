@@ -1,10 +1,10 @@
 const express = require('express');
 const route = express();
 const axios = require('axios');
-
+const url = 'http://localhost:3010';
 
 async function fetchingData1(){
-    const data = await fetch('http://localhost:3025' , {
+    const data = await fetch(url , {
         method : 'GET',
         body : JSON.stringify()
     });
@@ -12,7 +12,7 @@ async function fetchingData1(){
 }
 
 async function fetchingData2(){
-    const data = await axios.get('http://localhost:3025')
+    const data = await axios.get(url)
         .then(respones => {
             return respones.data;
         })
